@@ -176,6 +176,7 @@ Normalizing text can mean performing a number of tasks, but for our framework we
 ## Objectives:
 - Compute the similarity between tweets using the Jaccard Distance metric.
 - Cluster tweets using the K-means clustering algorithm.
+![Alt Text] (https://raw.githubusercontent.com/kalelc/cluster-analysis/master/0.gif)
 
 ## Introduction to Jaccard Distance:
 The Jaccard distance, which measures dissimilarity between two sample sets (A and B). It is defined as the difference of the sizes of the union and the intersection of two sets divided by the size of the union of the sets.
@@ -202,6 +203,7 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
 
 
 
-
+# Les mots clés
+ API Twitter, Tweets, Cleaning(Token, lemm,....), Kmeans, distance de Jaccard
 
 
