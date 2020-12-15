@@ -148,9 +148,9 @@ For our task, we will tokenize our sample text into a list of words. This is don
 ### <p style="color:#3A75A7" font=" Bookman"  size="75" >Normalization generally refers to a series of related tasks meant to put all text on a level playing field: converting all text to the same case (upper or lower), removing punctuation, converting numbers to their word equivalents, and so on. Normalization puts all words on equal footing, and allows processing to proceed uniformly.
 
 Normalizing text can mean performing a number of tasks, but for our framework we will approach normalization in 3 distinct steps: 
-     (1) stemming
-     (2) lemmatization
-     (3) everything else. </p>
+    1- stemming
+    2- lemmatization
+    3- everything else. </p>
      
      
 
@@ -171,5 +171,14 @@ Normalizing text can mean performing a number of tasks, but for our framework we
 ## Objectives:
 - Compute the similarity between tweets using the Jaccard Distance metric.
 - Cluster tweets using the K-means clustering algorithm.
+
+## Introduction to Jaccard Distance:
+The Jaccard distance, which measures dissimilarity between two sample sets (A and B). It is defined as the difference of the sizes of the union and the intersection of two sets divided by the size of the union of the sets.
+
+![Image of Yaktocat](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-44046533fcd54e98cb53619b3390e083_l3.png)
+
+
+
+
 
 
