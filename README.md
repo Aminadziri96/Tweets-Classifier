@@ -1,27 +1,31 @@
 # Tweets-Classifier
 classification Tweets avec Kmeans aprés les extrairer
 ![Alt Text](https://miro.medium.com/max/1600/1*K5r1UXVuYmVuqXiKkuX5tg.gif)
- ## <a style="color:#CDCD43" font=" Bookman"  size="75" > Extraction de tweets   </a> 
+
+## <a style="color:#CDCD43" font=" Bookman"  size="75" > Extraction de tweets   </a> 
 
 Pour faire du machine learning sur des tweets il faut des tweets  Pour cela deux options se présentent. La première est d’utiliser l’API que Twitter lui-même propose. Elle permet de récupérer des tweets en ajoutant certaines conditions sur le type de tweets que vous souhaitez.
-![image](‪C:\Users\ADM\Desktop\Sans titre.png)
+
+   # API credentials here
+   consumer_key = "oCXOidLwh4iJdfx7jE1eA92oE"
+   consumer_secret = "zOs8rMnEwL5ggheUacMdSIzJZ74QZQV01WZrDjWfeGvZG5USi9"
+   access_token = "1327999624171368450-z174EGborRp3e6Tr9irVpUCPDFL3lL"
+   access_token_secret = "y6YcPwMDP78FADpvAgZ9zOUEFSt8HRTdJj3nWjAXnVxiw"
 
 
 
 
 La seconde option est l’utilisation du module Python Twitterscrapper. Vous pouvez extraire un grand nombre de tweets en spécifiant des critères de date, de langues et en vous limitant aux tweets qui contiennent certains mots-clés. Exemple:
 
-import tweepy #https://github.com/tweepy/tweepy
-import csv
 
-#Twitter API credentials
-consumer_key = ""
-consumer_secret = ""
-access_key = ""
-access_secret = ""
-
-
-def get_all_tweets(screen_name):
+      import tweepy #https://github.com/tweepy/tweepy
+      import csv
+     #Twitter API credentials
+     consumer_key = ""
+     consumer_secret = ""
+      access_key = ""
+      access_secret = ""
+    def get_all_tweets(screen_name):
     #Twitter only allows access to a users most recent 3240 tweets with this method
     
     #authorize twitter, initialize tweepy
@@ -64,10 +68,12 @@ def get_all_tweets(screen_name):
         writer = csv.writer(f)
         writer.writerow(["id","created_at","text"])
         writer.writerows(outtweets)
-    
-    pass
+	 pass
+      if __name__ == '__main__':
+      #pass in the username of the account you want to download
+      get_all_tweets("J_tsar")
+      
+      
+      
+## <p style="color:#CDCD43" font=" Bookman"  size="75" > J’ai choisi de récupérer les tweets liée avec les cathégories suivantes: economic, health, sport, movies et education  tous sont extrait de la language english fixé dés le début dans notre code avec credentiels et dans le but d'avoir 10000 tweets.   </p>       
 
-
-if __name__ == '__main__':
-	#pass in the username of the account you want to download
-	get_all_tweets("J_tsar")
