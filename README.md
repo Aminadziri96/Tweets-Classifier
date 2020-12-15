@@ -75,5 +75,22 @@ La seconde option est l’utilisation du module Python Twitterscrapper. Vous pou
       
       
       
-## <p style="color:#CDCD43" font=" Bookman"  size="75" > J’ai choisi de récupérer les tweets liée avec les cathégories suivantes: economic, health, sport, movies et education  tous sont extrait de la language english fixé dés le début dans notre code avec credentiels et dans le but d'avoir 10000 tweets.   </p>       
+## <p style="color:#CDCD43" font=" Bookman"  size="75" > J’ai choisi de récupérer les tweets liée avec les cathégories suivantes: economic, health, sport, movies et education  tous sont extrait de la language english fixé dés le début dans notre code avec credentiels et dans le but d'avoir 10000 tweets.   </p> 
+
+# Nettoyage et construction du pipeline NLP
+
+## <p style="color:#CDCD43" font=" Bookman"  size="75" >Une rapide inspection de la base nous permet de voir que la compréhension de certains tweets est difficile. Le nettoyage sera d’autant plus important. </p>
+
+![Alt Text](https://laforgecollective.fr/wp-content/uploads/2018/07/ANIM-NETTOYAGE.gif)
+
+## En NLP, on commence toujours par construire un pipeline de nettoyage des données. Personnellement j’utilise les Reg-ex avec le module Python re qui permettent de faire cela facilement.
+
+Le nettoyage des tweets comprendra plusieurs choses :
+
+- Enlever les emojis 
+- Retirer la ponctuation : très facile avec les reg-ex
+- Retirer les caractères spéciaux : très facile avec les reg-ex mais tous les caractères ne seront pas retirés dans un premier temps. Les tweets sont des objets très sales !
+- Retirer les chiffres : avec une Reg-ex aussi
+- Changer les lettres majuscules en minuscules
+
 
