@@ -179,6 +179,11 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
 
 
 
+# Les problémes reconnus
+
+![Alt Text](https://media1.giphy.com/media/wvQIqJyNBOCjK/200.gif)
+
+
 
 
 
