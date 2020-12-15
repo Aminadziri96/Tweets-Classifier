@@ -162,13 +162,14 @@ Normalizing text can mean performing a number of tasks, but for our framework we
     3-Remove stopwords
     4-Lammetization/stemming - Tranforming any form of a word to its root word </a>
     
+![Image of Yaktocat](https://media.arxiv-vanity.com/render-output/3764435/x1.png)
+    
 ###  => Toutes les étapes sont developper dans le fichier "classification_mega_df.ipynb"
 
 # Tweets Clustering
-
-![Image of Yaktocat](https://media.arxiv-vanity.com/render-output/3764435/x1.png)
-
+![Image of Yaktocat](https://cdn.analyticsvidhya.com/wp-content/uploads/2018/10/topic_model.png)
 ## Objectives:
 - Compute the similarity between tweets using the Jaccard Distance metric.
 - Cluster tweets using the K-means clustering algorithm.
+
 
