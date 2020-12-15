@@ -78,6 +78,8 @@ La seconde option est l’utilisation du module Python Twitterscrapper. Vous pou
 ## <p style="color:#CDCD43" font=" Bookman"  size="75" > J’ai choisi de récupérer les tweets liée avec les cathégories suivantes: economic, health, sport, movies et education  tous sont extrait de la language english fixé dés le début dans notre code avec credentiels et dans le but d'avoir 10000 tweets.   </p> 
 
 # <p style="color:#CDCD43" font=" Bookman"  size="75" > Nettoyage et construction du pipeline NLP </p>
+![Image of Yaktocat](https://cdn.datafloq.com/cache/blog_pictures/1200x630/googles-bert-changing-nlp-landscape.jpg)
+
 
 ## <p style="color:#CDCD43" font=" Bookman"  size="75" >Une rapide inspection de la base nous permet de voir que la compréhension de certains tweets est difficile. Le nettoyage sera d’autant plus important. </p>
 
@@ -134,4 +136,12 @@ Voilà à quoi ressemble notre pipeline :
     mega_df = pd.concat([ _1, _2, _3, _4, _5])
     mega_df.shape  
     
-##  => 10K tweets un nombre important dans le but d'avoir une meilleurs classification
+###  => 10K tweets un nombre important dans le but d'avoir une meilleurs classification
+###  => Toutes les étapes sont developper dans le fichier "classification_mega_df.ipynb"
+## <a style="color:#3A75A7" font=" Bookman"  size="75" > Pre-processing text data </a>
+## <a style="color:#768593" font=" Bookman"  size="75" >     Most of the text data are cleaned by following below steps. </a>
+
+    1-Remove punctuations
+    2-Tokenization - Converting a sentence into list of words
+    3-Remove stopwords
+    4-Lammetization/stemming - Tranforming any form of a word to its root word </a>
