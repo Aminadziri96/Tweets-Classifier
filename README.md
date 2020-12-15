@@ -207,3 +207,4 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
  API Twitter, Tweets, Cleaning(Token, lemm,....), Kmeans, distance de Jaccard
 
 
+https://mybinder.org/v2/gh/amina1996dni/Tweets-Classifier/main?filepath=classification_mega_df.ipynb
