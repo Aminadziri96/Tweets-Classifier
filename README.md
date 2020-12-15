@@ -177,6 +177,14 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
 
 ![Image of Yaktocat](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-44046533fcd54e98cb53619b3390e083_l3.png)
 
+        # defining the Jaccard distance
+         def jaccard(a, b):
+         inter = list(set(a) & set(b))
+         I = len(inter)
+         union = list(set(a) | set(b))
+         U = len(union)
+         return round(1 - (float(I) / U), 4)
+
 
 
 # Les problémes reconnus
