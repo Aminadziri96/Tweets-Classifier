@@ -181,7 +181,10 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
 
 # Les problémes reconnus
 
-![Alt Text](https://media1.giphy.com/media/wvQIqJyNBOCjK/200.gif)
+![Alt Text](https://media1.giphy.com/media/wvQIqJyNBOCjK/200.gif) 1- le nombre important des tweets a extraire de divers domaines 
+                                                                  2- concaténer les divers tweets collecter
+								  3- cleaning tweets a quelles methodes la plus bénéfique?
+
 
 
 
