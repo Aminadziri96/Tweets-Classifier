@@ -135,9 +135,25 @@ Voilà à quoi ressemble notre pipeline :
                   
     mega_df = pd.concat([ _1, _2, _3, _4, _5])
     mega_df.shape  
+        
     
-###  => 10K tweets un nombre important dans le but d'avoir une meilleurs classification
-###  => Toutes les étapes sont developper dans le fichier "classification_mega_df.ipynb"
+# Tokenization
+ 
+### <p style="color:#3A75A7" font=" Bookman"  size="75" >Tokenization is a step which splits longer strings of text into smaller pieces, or tokens. Larger chunks of text can be tokenized into sentences, sentences can be tokenized into words, etc. Further processing is generally performed after a piece of text has been appropriately tokenized. Tokenization is also referred to as text segmentation or lexical analysis. Sometimes segmentation is used to refer to the breakdown of a large chunk of text into pieces larger than words (e.g. paragraphs or sentences), while tokenization is reserved for the breakdown process which results exclusively in words.</p>
+
+For our task, we will tokenize our sample text into a list of words. This is done using NTLK's word_tokenize() function.
+
+# Normalization
+ 
+### <p style="color:#3A75A7" font=" Bookman"  size="75" >Normalization generally refers to a series of related tasks meant to put all text on a level playing field: converting all text to the same case (upper or lower), removing punctuation, converting numbers to their word equivalents, and so on. Normalization puts all words on equal footing, and allows processing to proceed uniformly.
+
+Normalizing text can mean performing a number of tasks, but for our framework we will approach normalization in 3 distinct steps: 
+     (1) stemming
+     (2) lemmatization
+     (3) everything else. </p>
+     
+     
+
 ## <a style="color:#3A75A7" font=" Bookman"  size="75" > Pre-processing text data </a>
 ## <a style="color:#768593" font=" Bookman"  size="75" >     Most of the text data are cleaned by following below steps. </a>
 
@@ -145,3 +161,14 @@ Voilà à quoi ressemble notre pipeline :
     2-Tokenization - Converting a sentence into list of words
     3-Remove stopwords
     4-Lammetization/stemming - Tranforming any form of a word to its root word </a>
+    
+###  => Toutes les étapes sont developper dans le fichier "classification_mega_df.ipynb"
+
+# Tweets Clustering
+
+![Image of Yaktocat](https://media.arxiv-vanity.com/render-output/3764435/x1.png)
+
+## Objectives:
+- Compute the similarity between tweets using the Jaccard Distance metric.
+- Cluster tweets using the K-means clustering algorithm.
+
