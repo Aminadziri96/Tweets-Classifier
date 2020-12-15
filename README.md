@@ -6,6 +6,11 @@ classification Tweets avec Kmeans aprés les extrairer
 
 Pour faire du machine learning sur des tweets il faut des tweets  Pour cela deux options se présentent. La première est d’utiliser l’API que Twitter lui-même propose. Elle permet de récupérer des tweets en ajoutant certaines conditions sur le type de tweets que vous souhaitez.
 
+## Twitter API Access
+
+Twitter implements OAuth 1.0A as its standard authentication mechanism, and in order to use it to make requests to Twitter's API, you'll need to go to https://dev.twitter.com/apps and create a sample application. There are four primary identifiers you'll need to note for an OAuth 1.0A workflow: consumer key, consumer secret, access token, and access token secret. Note that you will need an ordinary Twitter account in order to login, create an app, and get these credentials.
+![Image of Yaktocat](https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/raw/51959891d22ff517718962a6d62c583f94759c5d/ipynb/resources/ch01-twitter/images/Twitter-AppCredentials.png)
+
    # API credentials here
      consumer_key = "oCXOidLwh4iJdfx7jE1eA92oE"
      consumer_secret = "zOs8rMnEwL5ggheUacMdSIzJZ74QZQV01WZrDjWfeGvZG5USi9"
