@@ -77,20 +77,61 @@ La seconde option est l’utilisation du module Python Twitterscrapper. Vous pou
       
 ## <p style="color:#CDCD43" font=" Bookman"  size="75" > J’ai choisi de récupérer les tweets liée avec les cathégories suivantes: economic, health, sport, movies et education  tous sont extrait de la language english fixé dés le début dans notre code avec credentiels et dans le but d'avoir 10000 tweets.   </p> 
 
-# Nettoyage et construction du pipeline NLP
+# <p style="color:#CDCD43" font=" Bookman"  size="75" > Nettoyage et construction du pipeline NLP </p>
 
 ## <p style="color:#CDCD43" font=" Bookman"  size="75" >Une rapide inspection de la base nous permet de voir que la compréhension de certains tweets est difficile. Le nettoyage sera d’autant plus important. </p>
 
 ![Alt Text](https://laforgecollective.fr/wp-content/uploads/2018/07/ANIM-NETTOYAGE.gif)
 
-## En NLP, on commence toujours par construire un pipeline de nettoyage des données. Personnellement j’utilise les Reg-ex avec le module Python re qui permettent de faire cela facilement.
+##  <p style="color:#CDCD43" font=" Bookman"  size="75" > En NLP, on commence toujours par construire un pipeline de nettoyage des données. Personnellement j’utilise les Reg-ex avec le module Python re qui permettent de faire cela facilement.
 
 Le nettoyage des tweets comprendra plusieurs choses :
 
-- Enlever les emojis 
-- Retirer la ponctuation : très facile avec les reg-ex
-- Retirer les caractères spéciaux : très facile avec les reg-ex mais tous les caractères ne seront pas retirés dans un premier temps. Les tweets sont des objets très sales !
-- Retirer les chiffres : avec une Reg-ex aussi
-- Changer les lettres majuscules en minuscules
+ - Enlever les emojis 
+ - Retirer la ponctuation : très facile avec les reg-ex
+ - Retirer les caractères spéciaux : très facile avec les reg-ex mais tous les caractères ne seront pas retirés dans un premier temps. Les tweets sont des objets très sales !
+ - Retirer les chiffres : avec une Reg-ex aussi
+ - Changer les lettres majuscules en minuscules
+ </p>
+
+![Image of Yaktocat](https://www.kdnuggets.com/wp-content/uploads/text-preprocessing-framework-2.png)
+
+Voilà à quoi ressemble notre pipeline :
+       
+     import re
+    def nlp_pipeline(text):
+
+    text = text.lower()
+    text = text.replace('\n', ' ').replace('\r', '')
+    text = ' '.join(text.split())
+    text = re.sub(r"[A-Za-z\.]*[0-9]+[A-Za-z%°\.]*", "", text)
+    text = re.sub(r"(\s\-\s|-$)", "", text)
+    text = re.sub(r"[,\!\?\%\(\)\/\"]", "", text)
+    text = re.sub(r"\&\S*\s", "", text)
+    text = re.sub(r"\&", "", text)
+    text = re.sub(r"\+", "", text)
+    text = re.sub(r"\#", "", text)
+    text = re.sub(r"\$", "", text)
+    text = re.sub(r"\£", "", text)
+    text = re.sub(r"\%", "", text)
+    text = re.sub(r"\:", "", text)
+    text = re.sub(r"\@", "", text)
+    text = re.sub(r"\-", "", text)
+
+    return text
 
 
+## <p style="color:#CDCD43" font=" Bookman"  size="75" > Tout d'abord je réalise cleaning des tweets d'une seule DataSet dans le but de mieux comprendre les fonctions de cleaning géré par: NLP.Ensuite, on fait la concaténation de l'ensemble des fichiers csv en une MegaDataFrame </P>
+
+      import pandas as pd
+      # from twitter. Pick out the guys with popularity > 10k.
+      _1 = pd.read_csv('economy_tweets.csv')
+     _2 = pd.read_csv('education_tweets.csv')
+     _3 = pd.read_csv('health_tweets.csv')
+     _4 = pd.read_csv('movies_tweets.csv')
+     _5 = pd.read_csv('sport_tweets.csv')
+                  
+    mega_df = pd.concat([ _1, _2, _3, _4, _5])
+    mega_df.shape  
+    
+##  => 10K tweets un nombre important dans le but d'avoir une meilleurs classification
