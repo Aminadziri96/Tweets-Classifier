@@ -7,13 +7,13 @@ classification Tweets avec Kmeans aprés les extrairer
 Pour faire du machine learning sur des tweets il faut des tweets  Pour cela deux options se présentent. La première est d’utiliser l’API que Twitter lui-même propose. Elle permet de récupérer des tweets en ajoutant certaines conditions sur le type de tweets que vous souhaitez.
 
    # API credentials here
-   consumer_key = "oCXOidLwh4iJdfx7jE1eA92oE"
-   consumer_secret = "zOs8rMnEwL5ggheUacMdSIzJZ74QZQV01WZrDjWfeGvZG5USi9"
-   access_token = "1327999624171368450-z174EGborRp3e6Tr9irVpUCPDFL3lL"
-   access_token_secret = "y6YcPwMDP78FADpvAgZ9zOUEFSt8HRTdJj3nWjAXnVxiw"
+     consumer_key = "oCXOidLwh4iJdfx7jE1eA92oE"
+     consumer_secret = "zOs8rMnEwL5ggheUacMdSIzJZ74QZQV01WZrDjWfeGvZG5USi9"
+     access_token = "1327999624171368450-z174EGborRp3e6Tr9irVpUCPDFL3lL"
+     access_token_secret = "y6YcPwMDP78FADpvAgZ9zOUEFSt8HRTdJj3nWjAXnVxiw"
 
 
-
+![Image of Yaktocat](https://tvsarawak.com/wp-content/uploads/2020/04/1ACOVERPHOTO-6.jpg)
 
 La seconde option est l’utilisation du module Python Twitterscrapper. Vous pouvez extraire un grand nombre de tweets en spécifiant des critères de date, de langues et en vous limitant aux tweets qui contiennent certains mots-clés. Exemple:
 
