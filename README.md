@@ -210,8 +210,7 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
 
 # integrer un video descriptive de meme demarche mais en faisant la modélisation
 
-[![](https://img.youtube.com/vi/VID/0.jpg)](https://www.youtube.com/watch?v=NOMS0wgG-lI&feature=youtu.be)
-
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=NOMS0wgG-lI&feature=youtu.be)
 
 
 
