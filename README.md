@@ -176,6 +176,8 @@ Normalizing text can mean performing a number of tasks, but for our framework we
 ## Objectives:
 - Compute the similarity between tweets using the Jaccard Distance metric.
 - Cluster tweets using the K-means clustering algorithm.
+
+
 ![Alt Text] (https://raw.githubusercontent.com/kalelc/cluster-analysis/master/0.gif)
 
 ## Introduction to Jaccard Distance:
