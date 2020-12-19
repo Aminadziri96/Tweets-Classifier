@@ -209,6 +209,10 @@ The Jaccard distance, which measures dissimilarity between two sample sets (A an
  API Twitter, Tweets, Cleaning(Token, lemm,....), Kmeans, distance de Jaccard
 
 
+# Conclusion
+Notre projet Consiste a télécharger les Tweets à partir de Twitter en utilisant l’API ensuite en en collect dans un CSV et faire cleaning les donnes inutiles par la suite en applique NLP pour asure Tokenization, Lemmatization and removing et en termine par la classification des donnes ou en rougroupe les donnes en des classes.
+
+
 
 # integrer un video descriptive de meme demarche mais en faisant la modélisation
 
